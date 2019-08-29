@@ -13,7 +13,6 @@ RSpec.describe 'index.html' do
     expect(children[2]).to match(/1 tbsp of butter/)
   end
 
-
   it 'contains a nested <ul> tag' do
     ul = parsed_html.search('ul').first
     children = ul.children.select {|child| child.name == "li"}
